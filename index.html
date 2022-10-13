@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <img class="sidebar-image" src="images/logo_dashboard.svg" alt="logo_dashboard" class="logo">
+            <h1 class="sidebar-title">Dashboard <span class="sidebar-title-description">v.01</span></h1>
+        </div>
+
+        <div class="sidebar-content">
+            <nav class="menu">
+                <a class="menu-item" href="#">
+                    <img src="images/icon_dashboard.svg" alt="icon_dashboard">
+                    <div class="menu-item-title"><p class="menu-item-title-text">Dashboard</p></div>
+                </a>
+                <a class="menu-item" href="#">
+                    <img src="images/icon_product.svg" alt="icon_product">
+                    <div class="menu-item-title">
+                        <div><p class="menu-item-title-text">Product</p></div>
+                        <div class="menu-item-title-image"><img src="images/arrow.svg" alt="arrow"></div>
+                    </div>
+                </a>
+                <a class="menu-item active" href="#">
+                    <img src="images/icon_customers.svg">
+                    <div class="menu-item-title">
+                        <div><p class="menu-item-title-text active">Customers</p></div>
+                        <div class="menu-item-title-image"><img src="images/arrow.svg" alt="arrow"></div>
+                    </div>
+                </a>
+                <a class="menu-item" href="#">
+                    <img src="images/icon_income.svg">
+                    <div class="menu-item-title">
+                        <div><p class="menu-item-title-text">Income</p></div>
+                        <div  class="menu-item-title-image"><img src="images/arrow.svg" alt="arrow"></div>
+                    </div>
+                </a>
+                <a class="menu-item" href="#">
+                    <img src="images/icon_promote.svg">
+                    <div class="menu-item-title">
+                        <div><p class="menu-item-title-text">Promote</p></div>
+                        <div class="menu-item-title-image"><img src="images/arrow.svg" alt="arrow"></div>
+                    </div>
+                </a>
+                <a class="menu-item" href="#">
+                    <img src="images/icon_help.svg">
+                    <div class="menu-item-title">
+                        <div><p class="menu-item-title-text">Help</p></div>
+                        <div class="menu-item-title-image"><img src="images/arrow.svg" alt="arrow"></div>
+                    </div>
+                </a>
+            </nav>
+            <button id="mobile-menu-button" class="menu-button">
+                <img src="./images/hamburger-white.svg" alt="menu button">
+              </button>
+            <nav id="mobile-nav" class="mobile-nav">
+                <div class="mobile-nav-header">
+                    <img class="sidebar-image" src="images/logo_dashboard.svg" alt="logo_dashboard" class="logo">
+                    <h1 class="sidebar-title">Dashboard <span class="sidebar-title-description">v.01</span></h1>
+                    <img id="mobile-nav-close" class="mobile-nav-close" src="images/close-red.svg" alt="#">
+                    </div>
+
+                <ul class="mobile-nav-list">
+                    <li class="mobile-nav-item">
+                        <a class="menu-item" href="#">
+                            <img src="images/icon_dashboard.svg" alt="icon_dashboard">
+                            <div class="menu-item-title"><p class="menu-item-title-text">Dashboard</p></div>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="menu-item" href="#">
+                            <img src="images/icon_product.svg" alt="icon_product">
+                            <div><p class="menu-item-title-text">Product</p></div>
+                        </a> 
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="menu-item active" href="#">
+                            <img src="images/icon_customers.svg">
+                            <div><p class="menu-item-title-text active">Customers</p></div>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="menu-item" href="#">
+                            <img src="images/icon_income.svg">
+                            <div><p class="menu-item-title-text">Income</p></div>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="menu-item" href="#">
+                            <img src="images/icon_promote.svg">
+                            <div><p class="menu-item-title-text">Promote</p></div>
+                        </a>
+                    </li>
+                    <li class="mobile-nav-item">
+                        <a class="menu-item" href="#">
+                            <img src="images/icon_help.svg">
+                            <div><p class="menu-item-title-text">Help</p></div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="sidebar-footer">
+            <div class="profile">
+                <div class="pofile-media">
+                    <img src="images/photo_manager.png" alt="evano" class="profile-img">
+                </div>
+                <div>
+                    <p class="profile-title">Evano</p>
+                    <p class="profile-description">Project Manager</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+    
+    <main class="main">
+        <header class="main-header">
+            <h2 class="main-title">Hello Evano 👋🏼,</h2>    
+        </header>
+        
+        <div class="main-content">
+            <div class="table">
+                <div class="table-header">
+                    <div>
+                        <p class="table-title">All Customers</p>
+                        <p class="table-description">Active Members</p>
+                    </div> 
+                    <div class="table-field-icon table-field-icon-search"> 
+                        <input type="text" class="table-input" placeholder="Search">
+                    </div>
+                </div>
+                
+                <div class="table-content">
+                    <div class="table-row general">
+                        <div class="table-item first">Customer Name</div>
+                        <div class="table-item second">Company</div>
+                        <div class="table-item third">Phone Number</div>
+                        <div class="table-item fourth">Email</div>
+                        <div class="table-item fifth">Country</div>
+                        <div class="table-item sixth">Status</div>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="table-row">
+                        <div class="table-item first">Jane Cooper</div>
+                        <div class="table-item second">Microsoft</div>
+                        <div class="table-item third">(225) 555-0118</div>
+                        <div class="table-item fourth">jane@microsoft.com</div>
+                        <div class="table-item fifth">United States</div>
+                        <div class="table-item sixth">
+                            <button class="table-btn table-btn-green">Active</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-item first">Floyd Miles</div>
+                        <div class="table-item second">Yahoo</div>
+                        <div class="table-item third">(205) 555-0100</div>
+                        <div class="table-item fourth">floyd@yahoo.com</div>
+                        <div class="table-item fifth">Kiribati</div>
+                        <div class="table-item sixth">
+                            <button class="table-btn table-btn-red">Inactive</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-item first">Ronald Richards</div>
+                        <div class="table-item second">Adobe</div>
+                        <div class="table-item third">(302) 555-0107</div>
+                        <div class="table-item fourth">ronald@adobe.com</div>
+                        <div class="table-item fifth">Israel</div>
+                        <div class="table-item sixth">
+                            <button class="table-btn table-btn-red">Inactive</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-item first">Marvin McKinney</div>
+                        <div class="table-item second">Tesla</div>
+                        <div class="table-item third">(252) 555-0126</div>
+                        <div class="table-item fourth">marvin@tesla.com</div>
+                        <div class="table-item fifth">Iran</div>
+                        <div class="table-item sixth">
+                            <button class="table-btn table-btn-green">Active</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-item first">Jerome Bell</div>
+                        <div class="table-item second">Google</div>
+                        <div class="table-item third">(629) 555-0129</div>
+                        <div class="table-item fourth">jerome@google.com</div>
+                        <div class="table-item fifth">Réunion</div>
+                        <div class="table-item sixth">
+                            <button class="table-btn table-btn-green">Active</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-item first">Kathryn Murphy</div>
+                        <div class="table-item second">Microsoft</div>
+                        <div class="table-item third">(406) 555-0120</div>
+                        <div class="table-item fourth">kathryn@microsoft.com</div>
+                        <div class="table-item fifth">Curaçao</div>
+                        <div class="table-item sixth">
+                            <button class="table-btn table-btn-green">Active</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-item first">Jacob Jones</div>
+                        <div class="table-item second">Yahoo</div>
+                        <div class="table-item third">(208) 555-0112</div>
+                        <div class="table-item fourth">jacob@yahoo.com</div>
+                        <div class="table-item fifth">Brazil</div>
+                        <div class="table-item sixth">
+                            <button class="table-btn table-btn-green">Active</button>
+                        </div>
+                    </div>
+
+                    <div class="table-row">
+                        <div class="table-item first">Kristin Watson</div>
+                        <div class="table-item second">Facebook</div>
+                        <div class="table-item third">(704) 555-0127</div>
+                        <div class="table-item fourth">kristin@facebook.com</div>
+                        <div class="table-item fifth">Åland Islands</div>
+                        <div class="table-item sixth">
+                            <button class="table-btn table-btn-red">Inactive</button>
+                        </div>
+                    </div>
+
+
+                </div>
+                
+                <div class="table-footer">
+                    <div class="paginator">
+                        <div class="paginator-text">Showing data 1 to 8 of  256K entries</div>
+                        <div class="paginator-buttons">
+                            <div>
+                                <button class="paginator-btn"><</button>
+                            </div>
+                            <div>
+                                <button class="paginator-btn active">1</button>
+                            </div>
+                            <div>
+                                <button class="paginator-btn">2</button>
+                            </div>
+                            <div>
+                                <button class="paginator-btn">3</button>
+                            </div>
+                            <div>
+                                <button class="paginator-btn">4</button>
+                            </div>
+                            <div>
+                                <button class="paginator-btn dots" disabled>...</button>
+                            </div>
+                            <div>
+                                <button class="paginator-btn">40</button>
+                            </div>
+                            <div>
+                                <button class="paginator-btn last">></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/mobile-menu.js"></script>
+</body>
+</html>
